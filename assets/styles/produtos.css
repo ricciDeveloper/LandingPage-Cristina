@@ -1,0 +1,81 @@
+@import url('global.css');
+@import url('reset.css');
+
+/* COMPONENTES */
+@import url('/assets/styles/components/_header.css');
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Evita que as imagens invadam o cabeçalho */
+
+.produtos {
+    /* margin-top: 6rem; Evita sobreposição com o header */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Layout responsivo em grid */
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem;
+    width: 100vw;
+
+}
+
+/* Item do produto */
+.produto-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Imagem responsiva */
+.produto-item img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/* Estilização do preço */
+.produto-preco {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Ajuste conforme seu design */
+    margin-top: 0.5rem;
+}
+
+/* Media Queries para adaptação */
+@media (min-width: 768px) {
+    .produtos ul {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .produtos ul {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 1000px;
+    }
+}
