@@ -14,7 +14,7 @@ main {
     width: 100vw;
 }
 
-/* Evita que as imagens invadam o cabeçalho */
+
 
 .produtos {
     /* margin-top: 6rem; Evita sobreposição com o header */
@@ -49,7 +49,14 @@ main {
     width: 100%;
     text-align: center;
 }
-
+.produto-item strong {
+    margin-top: 0.1rem;
+    background-color: var(--primary-color);
+    width: 7rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 25px;
+    padding: 0.1rem;
+}
 /* Imagem responsiva */
 .produto-item img {
     width: 10rem;
@@ -78,4 +85,45 @@ main {
         grid-template-columns: repeat(5, 1fr);
         max-width: 1000px;
     }
+}
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Imagem ampliada */
+#modal-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
 }
