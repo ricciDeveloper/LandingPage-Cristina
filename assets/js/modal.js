@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Lista de produtos com imagens e descrições
     const produtos = [
-        { src: "/assets/images/produtos/1.jpeg", desc: "Toalha de crochê artesanal com detalhes únicos." },
-        { src: "/assets/images/produtos/2.jpeg", desc: "Centro de mesa delicado, feito à mão." },
-        { src: "/assets/images/produtos/4.jpeg", desc: "Conjunto de sousplat para deixar sua mesa elegante." },
-        { src: "/assets/images/produtos/5.jpeg", desc: "Caminho de mesa sofisticado em crochê fino." },
-        { src: "/assets/images/produtos/6.jpeg", desc: "Tapete de crochê ideal para decoração aconchegante." },
-        { src: "/assets/images/produtos/8.jpeg", desc: "Porta-pano de prato charmoso com detalhes florais." },
-        { src: "/assets/images/produtos/9.jpeg", desc: "Jogo americano exclusivo para ocasiões especiais." },
-        { src: "/assets/images/produtos/10.jpeg", desc: "Almofada decorativa em crochê com cores vibrantes." },
+        { src: "/assets/images/produtos/1.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/2.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/4.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/5.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/6.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/8.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/9.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
+        { src: "/assets/images/produtos/10.jpeg", desc: "Croped de crochê artesanal com detalhes únicos. \n Entre e contato e faca sua encomenda." },
     ];
 
     // Seleciona todas as imagens dos produtos e adiciona o evento de clique

@@ -3,6 +3,9 @@
 
 /* COMPONENTES */
 @import url('/assets/styles/components/_header.css');
+@import url('./components/_footer.css');
+/* @import url('./components/_button.css'); */
+
 
 /* MAIN */
 main {
@@ -126,4 +129,36 @@ main {
     right: 20px;
     font-size: 28px;
     cursor: pointer;
+}
+
+
+.footer p{
+    color: #252424;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+
+.contato a img{
+    width: 5rem;
+    height: 5rem;
+}
+.contato{
+    border: none;
+    background: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: 1s;
+
+}
+.contato a img:hover{
+    background: none;
+    width: 5rem;
+    height: 10rem;
+    transform: scale(2.6);
+    transition: 1s;
 }

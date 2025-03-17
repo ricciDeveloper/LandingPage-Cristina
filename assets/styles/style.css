@@ -1,9 +1,20 @@
 @import url('global.css');
+@import url('reset.css');
+
 
 /* COMPONENTES */
 @import url('/assets/styles/components/_header.css');
-
+@import url('./components/_footer.css');
+@import url('./components/_button.css');
 /* MAIN */
+html , body{
+    height: 100vh;
+}
+main {
+    height: 80vh;
+ 
+    align-items: center;
+}
 .initial-page {
     display: flex;
     justify-content: center;
@@ -16,6 +27,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 10rem;
 }
 
 .initial-page h1 {
@@ -35,30 +47,41 @@
     font-weight: 500;
 }
 
-button {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 25px;
-    margin: 1rem;
-    cursor: pointer;
-    transition: 1s;
-    height: 4rem;
-}
 
-button a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    transition: 1s;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-    transition: 1s;
-}
 /* FOOTER */
+
+
+.footer p{
+    color: #252424;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.footer li{
+    list-style: none;
+    width: 100vw;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+
+.footer li a {
+    text-decoration: none;
+    color:#252424;
+}
+
+.footer ul li img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.25rem;
+
+}
