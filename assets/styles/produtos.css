@@ -131,7 +131,14 @@ main {
     cursor: pointer;
 }
 
+.footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.38rem;
 
+}
 .footer p{
     color: #252424;
     font-size: 1rem;
@@ -139,6 +146,8 @@ main {
     text-align: center;
     width: 100%;
     font-weight: bold;
+    padding: 0.5rem;
+   
 }
 
 
