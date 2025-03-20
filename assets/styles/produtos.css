@@ -13,14 +13,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
+    min-height: 100vh; /* Evita sobreposição */
 }
 
 
 
 .produtos {
-    /* margin-top: 6rem; Evita sobreposição com o header */
+    margin-top: 0.38rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -51,6 +51,12 @@ main {
     padding: 0.5rem;
     width: 100%;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.produto-item:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 10% */
 }
 .produto-item strong {
     margin-top: 0.1rem;
@@ -59,7 +65,9 @@ main {
     border: 1px solid var(--secondary-color);
     border-radius: 25px;
     padding: 0.1rem;
+    color: black;
 }
+
 /* Imagem responsiva */
 .produto-item img {
     width: 10rem;
@@ -104,6 +112,7 @@ main {
     transition: 1s;
 }
 
+/* Exibição do modal */
 /* Conteúdo do modal */
 .modal-content {
     position: relative;
@@ -112,6 +121,17 @@ main {
     border-radius: 10px;
     text-align: center;
     max-width: 80%;
+    width: 90%; /* Garante que não fique muito grande em telas menores */
+    max-height: 90vh; /* Evita que fique muito alto */
+    overflow: auto; /* Caso o conteúdo ultrapasse */
+}
+
+/* Ajuste para telas grandes */
+@media screen and (min-width: 1024px) {
+    .modal-content {
+        max-width: 600px; /* Define um tamanho máximo fixo */
+        width: auto; /* Mantém o tamanho natural dentro do limite */
+    }
 }
 
 /* Imagem ampliada */
@@ -130,7 +150,10 @@ main {
     font-size: 28px;
     cursor: pointer;
 }
-
+footer{ 
+    height: 10rem;
+    
+}
 .footer{
     width: 100vw;
     display: flex;
@@ -147,14 +170,15 @@ main {
     width: 100%;
     font-weight: bold;
     padding: 0.5rem;
+    padding-top: 0.5rem;
    
 }
 
 
 
 .contato a img{
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
 }
 .contato{
     border: none;
@@ -164,10 +188,7 @@ main {
     transition: 1s;
 
 }
-.contato a img:hover{
-    background: none;
-    width: 5rem;
-    height: 10rem;
-    transform: scale(2.6);
-    transition: 1s;
+.contato a img:hover {
+    transform: scale(1.3); /* Escala menor */
+    transition: 0.3s;
 }
