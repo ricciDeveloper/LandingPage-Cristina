@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos - Crochês da Cris</title>
     <!-- CSS -->
-     <link rel="stylesheet" href="../../assets/styles/reset.css">
-     <link rel="stylesheet" href="../../assets/styles/produtos.css">
-
-     <!--  favicon -->
-     <link rel="icon" type="image/x-icon" href="../../assets/images/icones/2.ico">
+    <link rel="stylesheet" href="../../assets/styles/reset.css">
+    <link rel="stylesheet" href="../../assets/styles/produtos.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/icones/2.ico">
 </head>
-<!-- Modal para exibir o produto ampliado -->
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modal-img" src="" alt="Produto">
-        <p id="modal-text"></p>
-    </div>
-</div>
 <body>
+    <!-- Modal para exibir o produto ampliado -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div class="gallery">
+                <img id="modal-img" src="" alt="Produto">
+                <div class="thumbnails"></div>
+            </div>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
     <header>
         <section class="header">
             <ul>
@@ -30,80 +33,72 @@
             <img src="/assets/images/4.png" alt="">
         </section>
     </header>
+
     <main>
         <section class="produtos">
             <ul>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/1.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/1.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/2.jpeg" alt="Produto">
-                    <strong class="produto-preco">R$79,90</strong>
-                </li>
-                <!-- <li class="produto-item">
-                    <img src="/assets/images/produtos/3.jpeg" alt="Produto">
-                    <strong class="produto-preco">R$79,90</strong>
-                </li> -->
-                <li class="produto-item">
-                    <img src="/assets/images/produtos/4.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/2.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/5.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/4.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/6.jpeg" alt="Produto">
-                    <strong class="produto-preco">R$79,90</strong>
-                </li>
-                <!-- <li class="produto-item">
-                    <img src="/assets/images/produtos/7.jpeg" alt="Produto">
-                    <strong class="produto-preco">R$79,90</strong>
-                </li> -->
-                <li class="produto-item">
-                    <img src="/assets/images/produtos/8.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/5.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/9.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/6.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/10.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/8.jpeg" alt="Produto">
                     <strong class="produto-preco">R$79,90</strong>
                 </li>
-
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/11.jpeg" alt="Produto">
-                    <strong class="produto-preco"><s>R$249,99</s>  R$199,99</strong>
+                    <img src="../../assets/images/produtos/9.jpeg" alt="Produto">
+                    <strong class="produto-preco">R$79,90</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/12.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/10.jpeg" alt="Produto">
+                    <strong class="produto-preco">R$79,90</strong>
+                </li>
+                <li class="produto-item">
+                    <img src="../../assets/images/produtos/11.jpeg" alt="Produto">
+                    <strong class="produto-preco"><s>R$249,99</s> R$199,99</strong>
+                </li>
+                <li class="produto-item">
+                    <img src="../../assets/images/produtos/12.jpeg" alt="Produto">
                     <strong class="produto-preco"><s>R$140,00</s> R$119,99</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/13.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/13.jpeg" alt="Produto">
                     <strong class="produto-preco"><s>R$140,00</s> R$119,99</strong>
                 </li>
                 <li class="produto-item">
-                    <img src="/assets/images/produtos/14.jpeg" alt="Produto">
+                    <img src="../../assets/images/produtos/14.jpeg" alt="Produto">
                     <strong class="produto-preco">R$119,99</strong>
                 </li>
             </ul>
         </section>
     </main>
+
     <footer>
         <section class="footer">
-            <p>Todos os nossos produtos são feitos à mão com cuidado e dedicação. Entre em contato para encomendar a confecção do seu produto personalizado.</p>        
-        
-
-        <button class="contato">
-            <a href="https://wa.me/+5544999977615" target="_blank"><img src="../../assets/images/icones/whatsapp.png" alt=""></a>
-        </button>
+            <p>Todos os nossos produtos são feitos à mão com cuidado e dedicação. Entre em contato para encomendar a confecção do seu produto personalizado.</p>
+            <button class="contato">
+                <a href="https://wa.me/+5544999977615" target="_blank"><img src="../../assets/images/icones/whatsapp.png" alt=""></a>
+            </button>
         </section>
     </footer>
-    <!-- script js -->
-     <script src="../../assets/js/modal.js"></script>
+
+    <!-- Script JS -->
+    <script src="../../assets/js/modal.js"></script>
 </body>
 </html>

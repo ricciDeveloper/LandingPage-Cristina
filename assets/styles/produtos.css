@@ -4,8 +4,6 @@
 /* COMPONENTES */
 @import url('/assets/styles/components/_header.css');
 @import url('./components/_footer.css');
-/* @import url('./components/_button.css'); */
-
 
 /* MAIN */
 main {
@@ -17,8 +15,6 @@ main {
     min-height: 100vh; /* Evita sobreposição */
 }
 
-
-
 .produtos {
     margin-top: 0.38rem;
     width: 100%;
@@ -27,7 +23,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-
 
 /* Layout responsivo em grid */
 .produtos ul {
@@ -38,7 +33,6 @@ main {
     padding: 0;
     margin: 1rem;
     width: 100vw;
-
 }
 
 /* Item do produto */
@@ -58,6 +52,7 @@ main {
 .produto-item:hover {
     transform: scale(1.2); /* Aumenta a imagem em 10% */
 }
+
 .produto-item strong {
     margin-top: 0.1rem;
     background-color: var(--primary-color);
@@ -97,6 +92,7 @@ main {
         max-width: 1000px;
     }
 }
+
 /* Modal */
 .modal {
     display: none;
@@ -112,7 +108,6 @@ main {
     transition: 1s;
 }
 
-/* Exibição do modal */
 /* Conteúdo do modal */
 .modal-content {
     position: relative;
@@ -134,12 +129,38 @@ main {
     }
 }
 
-/* Imagem ampliada */
+/* Estilização da galeria no modal */
+.gallery {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #modal-img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    
+}
+
+.thumbnails {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.thumbnails img:hover,
+.thumbnails img.active {
+    border: 2px solid var(--primary-color); /* Use sua cor primária */
 }
 
 /* Botão de fechar */
@@ -150,19 +171,21 @@ main {
     font-size: 28px;
     cursor: pointer;
 }
-footer{ 
+
+/* Footer */
+footer {
     height: 10rem;
-    
 }
-.footer{
+
+.footer {
     width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0.38rem;
-
 }
-.footer p{
+
+.footer p {
     color: #252424;
     font-size: 1rem;
     margin-top: 0.25rem;
@@ -171,23 +194,21 @@ footer{
     font-weight: bold;
     padding: 0.5rem;
     padding-top: 0.5rem;
-   
 }
 
-
-
-.contato a img{
+.contato a img {
     width: 3rem;
     height: 3rem;
 }
-.contato{
+
+.contato {
     border: none;
     background: none;
     margin: 0.5rem;
     padding: 0.5rem;
     transition: 1s;
-
 }
+
 .contato a img:hover {
     transform: scale(1.3); /* Escala menor */
     transition: 0.3s;
