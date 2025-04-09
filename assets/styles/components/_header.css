@@ -5,6 +5,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: url('/assets/images/yarn-knitting-orange-background.jpg');
     background-size: cover;
     background-position: center;
@@ -44,8 +45,8 @@ header .header ul li a {
     transition: 1s;
 }
 header .header img {
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     margin: 0 0.25rem;
 }
