@@ -187,7 +187,7 @@ footer {
 
 .footer p {
     color: #252424;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 0.25rem;
     text-align: center;
     width: 100%;
@@ -197,8 +197,8 @@ footer {
 }
 
 .contato a img {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .contato {
