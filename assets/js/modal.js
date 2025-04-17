@@ -33,8 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Define a imagem principal como a primeira da galeria
         modalImg.src = product.gallery[0];
-        modalText.textContent = product.desc;
-
+        modalText.innerHTML = product.desc.replace(/\n/g, '<br>');
         // Limpa os thumbnails existentes
         thumbnailsContainer.innerHTML = "";
 

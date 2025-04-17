@@ -107,7 +107,11 @@ main {
     align-items: center;
     transition: 1s;
 }
-
+#modal-text {
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+    margin: 0;
+    padding: 0;
+}
 /* Conteúdo do modal */
 .modal-content {
     position: relative;
