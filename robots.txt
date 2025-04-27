@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.crochesdacris.vercel.app//sitemap.xml
