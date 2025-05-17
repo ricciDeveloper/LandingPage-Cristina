@@ -2,7 +2,7 @@
 @import url('reset.css');
 
 /* COMPONENTES */
-@import url('/assets/styles/components/_header.css');
+@import url('./components/_header.css');
 @import url('./components/_footer.css');
 
 /* MAIN */
