@@ -1,20 +1,9 @@
 {
-    "redirects": [
-      {
-        "source": "https://www.crochesdacris.vercel.app/:path*",
-        "destination": "https://crochesdacris.vercel.app/:path*",
-        "permanent": true
-      },
-      {
-        "source": "http://www.crochesdacris.vercel.app/:path*",
-        "destination": "https://crochesdacris.vercel.app/:path*",
-        "permanent": true
-      },
-      {
-        "source": "http://crochesdacris.vercel.app/:path*",
-        "destination": "https://crochesdacris.vercel.app/:path*",
-        "permanent": true
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://crochesdacris.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
