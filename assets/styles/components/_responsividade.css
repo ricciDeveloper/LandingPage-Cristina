@@ -1,0 +1,159 @@
+/* RESPONSIVIDADE MOBILE */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    header .header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+
+    header .header ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    header .header ul.active {
+        display: flex;
+    }
+
+    header .header ul li {
+        width: 80%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    header .header ul li a {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        display: block;
+    }
+
+    header .header img {
+        width: 65px;
+        height: 65px;
+        margin: 0.5rem auto;
+        display: block;
+    }
+
+    /* Initial Page */
+    .initial-page {
+        padding: 1rem;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .initial-page h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+
+    .initial-text {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 1rem 0;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .footer li {
+        width: 100%;
+        margin: 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .footer ul li img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS MUITO PEQUENAS */
+@media screen and (max-width: 480px) {
+    .initial-page h1 {
+        font-size: 1.2rem;
+    }
+
+    .initial-text {
+        font-size: 0.8rem;
+    }
+
+    header .header ul li a {
+        font-size: 1rem;
+        padding: 0.8rem 1.6rem;
+    }
+}
+
+/* AJUSTES PARA ALTURA DA TELA */
+@media screen and (max-height: 480px) {
+    .initial-page {
+        padding-top: 2rem;
+    }
+}
+
+/* Menu Hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 1rem;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #252424;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}

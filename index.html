@@ -20,6 +20,11 @@
 <body>
     <header>
         <section class="header">
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="pages/produtos/produtos.html">Produtos</a></li>
@@ -44,9 +49,31 @@
         </ul>
         </section>
     </footer>
+
+    <!-- Scripts -->
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-      </script>
-      <script defer src="/_vercel/insights/script.js"></script>
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuList = document.querySelector('header .header ul');
+
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                menuList.classList.toggle('active');
+            });
+
+            // Fechar menu ao clicar em um link
+            const menuLinks = document.querySelectorAll('header .header ul li a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    menuToggle.classList.remove('active');
+                    menuList.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>

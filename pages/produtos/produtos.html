@@ -25,16 +25,14 @@
 
     <header>
         <section class="header">
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="../../index.html">Home</a></li>
-                <li><div class="dropdown">
-                            <button class="dropbtn">Produtos</button>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                    </div></li>
+                <li><a href="#">Produtos</a></li>
                 <li><a href="https://wa.me/+5544999977615" target="_blank">Contato</a></li>
             </ul>
             <img src="../../assets/images/4.png" alt="">
@@ -117,7 +115,27 @@
         </section>
     </footer>
 
-    <!-- Script JS -->
+    <!-- Scripts -->
     <script src="../../assets/js/modal.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuList = document.querySelector('header .header ul');
+
+            menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                menuList.classList.toggle('active');
+            });
+
+            // Fechar menu ao clicar em um link
+            const menuLinks = document.querySelectorAll('header .header ul li a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    menuToggle.classList.remove('active');
+                    menuList.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
