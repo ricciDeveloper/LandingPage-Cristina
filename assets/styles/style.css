@@ -1,9 +1,9 @@
 @import url('global.css');
 @import url('reset.css');
-@import url('components/_header.css');
+
 
 /* COMPONENTES */
-@import url('/assets/styles/components/_header.css');
+@import url('components/_header.css');
 @import url('./components/_footer.css');
 @import url('./components/_button.css');
 /* MAIN */
