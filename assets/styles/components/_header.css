@@ -50,6 +50,7 @@ header .header ul li a {
     font-size: 1rem;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 header .header img {
     width: 85px;
